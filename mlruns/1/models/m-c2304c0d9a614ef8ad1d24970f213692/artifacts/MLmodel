@@ -1,0 +1,49 @@
+artifact_path: file:///c:/Users/nasri/OneDrive/Desktop/Tunisair/mlruns/1/models/m-c2304c0d9a614ef8ad1d24970f213692/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-c2304c0d9a614ef8ad1d24970f213692
+model_size_bytes: 34276
+model_uuid: m-c2304c0d9a614ef8ad1d24970f213692
+prompts: null
+run_id: 2c470f24f37a4baa9977f9b5cf3c5c8a
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "year", "required": true}, {"type": "long", "name":
+    "month", "required": true}, {"type": "string", "name": "carrier", "required":
+    true}, {"type": "string", "name": "carrier_name", "required": true}, {"type":
+    "string", "name": "airport", "required": true}, {"type": "string", "name": "airport_name",
+    "required": true}, {"type": "double", "name": "arr_flights", "required": true},
+    {"type": "double", "name": "carrier_ct", "required": true}, {"type": "double",
+    "name": "weather_ct", "required": true}, {"type": "double", "name": "nas_ct",
+    "required": true}, {"type": "double", "name": "security_ct", "required": true},
+    {"type": "double", "name": "late_aircraft_ct", "required": true}, {"type": "double",
+    "name": "arr_cancelled", "required": true}, {"type": "double", "name": "arr_diverted",
+    "required": true}, {"type": "double", "name": "carrier_ratio", "required": true},
+    {"type": "double", "name": "weather_ratio", "required": true}, {"type": "double",
+    "name": "nas_ratio", "required": true}, {"type": "double", "name": "security_ratio",
+    "required": true}, {"type": "double", "name": "late_aircraft_ratio", "required":
+    true}, {"type": "double", "name": "cancellation_ratio", "required": true}, {"type":
+    "double", "name": "diverted_ratio", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-01 14:08:24.474202'
