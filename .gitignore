@@ -1,0 +1,7 @@
+"venv/" 
+"node_modules/" 
+"backend/.env" 
+"frontend/.env" 
+"*.pyc" 
+"__pycache__/" 
+"package-lock.json" 
